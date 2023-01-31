@@ -1,0 +1,98 @@
+$c-greay-black: #000000;
+$c-greay-very-darker: #333333;
+$c-greay-very-dark: #555555;
+$c-greay-dark: #888888;
+$c-greay: #dddddd;
+$c-greay-mid: #cccccc;
+$c-greay-light: #f5f5f5;
+
+$c-blue: #90d3ff;
+$c-blue-light: #c9e5f8;
+
+$c-white: #ffffff;
+
+$t-item-side: 38px;
+$sz-gutter: 16px;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}
+
+@mixin transition($x){
+    transition: $x;
+    -webkit-transition: $x;
+    -moz-transition: $x;
+    -ms-transition: $x;
+    -o-transition: $x;
+}
+
+@mixin transition-delay($x){
+    transition-delay: $x;
+    -webkit-transition-delay: $x;
+    -moz-transition-delay: $x;
+    -ms-transition-delay: $x;
+    -o-transition-delay: $x;
+}
+
+@mixin transition-duration($x){
+    transition-duration: $x;
+    -webkit-transition-duration: $x;
+    -moz-transition-duration: $x;
+    -ms-transition-duration: $x;
+    -o-transition-duration: $x;
+}
+
+@mixin blur-background($x){
+    -webkit-backdrop-filter: blur($x);
+    backdrop-filter: blur($x);
+}
+
+@mixin blur($x){
+    -webkit-filter: blur($x);
+    filter: blur($x);
+}
+
+@mixin select($x){
+    -webkit-touch-callout: $x; /* iOS Safari */
+    -webkit-user-select: $x; /* Safari */
+     -khtml-user-select: $x; /* Konqueror HTML */
+       -moz-user-select: $x; /* Old versions of Firefox */
+        -ms-user-select: $x; /* Internet Explorer/Edge */
+            user-select: $x; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@mixin flipH(){
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+@mixin flipV(){
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+}
+
+@mixin rotate($x){
+    -webkit-transform: rotate($x);
+    -moz-transform: rotate($x);
+    -ms-transform: rotate($x);
+    -o-transform: rotate($x);
+    transform: rotate($x);
+}

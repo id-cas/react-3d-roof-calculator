@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Roof Calculator"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <title>Roof Calculator</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="__xr_root"></div>
+    <script>
+      document.addEventListener('xr-kalkpro-getprice-request', (event) => {
+          if(!event.detail) return;
+          if(!event.detail.data) return;
+          const data = event.detail.data;
+
+          console.log('Data from Event');
+          console.log(data);
+          // Or actual data here
+          console.log('Data from Global API data (actual only after "xr-kalkpro-getprice-request" fired');
+          console.log(window.KalkPro.API.resData);
+      });
+    </script>
+  </body>
+</html>

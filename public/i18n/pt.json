@@ -1,0 +1,373 @@
+{
+    "cities.header-close": "Close",
+    "cities.header-collapse": "Collapse",
+    "cities.header-city": "My city",
+    "cities.header-default-city": "Koenig",
+
+    "input.select-roof-type-title": "Selecione o tipo de cobertura",
+    "input.roof-type-pent": "Cobertura com uma queda",
+    "input.roof-type-gable": "Cobertura com duas quedasf",
+    "input.roof-type-french": "French roof",
+    "input.roof-type-hip": "Hip roof",
+
+    "input.select-roof-params-title": "Especifique as dimensões da cobertura",
+    "input.roof-angle-defined-question": "O ângulo de inclinação do telhado está definido?",
+    "input.roof-angle-defined": "Inclinação pelo ângulo",
+    "input.roof-angle-defined-short": "Defined",
+    "input.roof-angle-undefined": "Encontrar a inclinação",
+    "input.roof-angle-undefined-short": "Undefined",
+
+    "input.beams-types": "Selecione o tipo de viga (requerido para a definição da fixação)",
+    "input.roof-sheets-param-length": "Selecione o comprimento da telha",
+    "input.auto-size": "Auto size (optimal length detection)",
+
+
+    "btn.calculate": "Calcular",
+    "btn.waiting": "Aguarde...",
+    "btn.download": "Salvar",
+    "btn.get-price": "Get Price",
+
+
+    "section.3D-title": "Modelo 3D da cobertura",
+
+    "3d-viewer.toolbar-btn-zoom-in": "Aumentar o Zoom",
+    "3d-viewer.toolbar-btn-zoom-out": "Reduzir o Zoom",
+    "3d-viewer.toolbar-btn-ruler": "Ruler",
+    "3d-viewer.toolbar-btn-screenshot": "Captura da tela",
+    "3d-viewer.toolbar-btn-download-files": "Download do modelo 3D",
+    "3d-viewer.toolbar-btn-scene-rotate": "Rotacionar",
+    "3d-viewer.toolbar-btn-scene-move": "Mover",
+    "3d-viewer.toolbar-btn-fullscreen": "Tela cheia",
+    "3d-viewer.toolbar-btn-ar": "AR - Augmented Reality",
+    "3d-viewer.toolbar-btn-perspective-inc": "Perspective increment",
+    "3d-viewer.toolbar-btn-perspective-dec": "Perspective decrement",
+    "3d-viewer.toolbar-btn-perspective-res": "Perspective reset",
+    "3d-viewer.toolbar-btn-about": "About",
+
+    "3d-viewer.toolbar-label-camera": "Camera",
+
+    "3d-viewer.label-download-png": "PNG",
+    "3d-viewer.label-download-pdf": "PDF",
+
+    "3d-viewer.menu-btn-visibility": "Visibility",
+    "3d-viewer.menu-btn-textures": "Select material",
+    "3d-viewer.menu-btn-colors": "Select color",
+
+
+
+    "section.2D-title": "Drawings",
+
+    "2d-viewer.btn-reset": "Reset",
+    "2d-viewer.btn-zoom-in": "Aumentar o Zoom",
+    "2d-viewer.btn-zoom-out": "Diminuir o Zoom",
+    "2d-viewer.btn-move-left": "Mover para esquerda",
+    "2d-viewer.btn-move-right": "Mover para direita",
+    "2d-viewer.btn-move-top": "Mover para cima",
+    "2d-viewer.btn-move-bottom": "Mover para baixo",
+    "2d-viewer.btn-rotate-clockwise": "Rotacionar no sentido horário",
+    "2d-viewer.btn-rotate-counterclockwise": "Rotacionar no sentido anti-horário",
+    "2d-viewer.btn-download-files": "Download do projeto",
+    "2d-viewer.btn-fullscreen": "Modo tela cheia",
+    "2d-viewer.btn-about": "About",
+
+    "2d-viewer.drawings-selector-title": "Selecione o projeto",
+
+
+    "2d-viewer.label-download-pdf-all": "PDF (all drawings)",
+    "2d-viewer.label-download-pdf": "PDF (active only)",
+    "2d-viewer.label-download-png": "PNG (active only)",
+    "2d-viewer.label-download-svg": "SVG (active only)",
+
+    "2d-viewer.pdf-label-drw-logo": "Company logo",
+    "2d-viewer.pdf-label-drw-title": "Title",
+    "2d-viewer.pdf-label-drw-author": "Author",
+    "2d-viewer.pdf-label-drw-date": "Date",
+    "2d-viewer.pdf-label-drw-pages": "Pages",
+
+
+
+    "section.RS-title": "Lista de Materiais",
+
+
+
+    "modal.title-error": "Error!",
+    "modal.title-attention": "Attention!",
+    "modal.title-download": "Download 3D scene file(s)",
+    "modal.title-select-video-input": "Select video stream camera",
+    "modal.title-about": "About",
+
+    "modal.content-camera-error-enumerate-media-devices": "Unable to enumerate media devices.",
+    "modal.content-camera-error-enumerate-cameras": "Unable to enumerate cameras.",
+    "modal.content-camera-error-not-found": "No camera found on your device. Use other device with camera.",
+    "modal.content-camera-error-exception": "Some error(s) occured when connecting to camera on your device. Or you had declined camera access request.",
+    "modal.content-about": "<div style=\"width: 240px; margin: 0 auto;\"><p>&nbsp;</p><p>Developed by <a target=\"_blank\" href=\"https://kalk.pro/en/\">Kalk.Pro</a></p><p>Sponsored by <a target=\"_blank\" href=\"https://kingspan-isoeste.com.br/\">KingSpan</a></p></div>",
+
+    "modal.content-subscribe": "You must have active subscription.",
+    
+    "modal.button-download": "Download",
+    "modal.button-accept": "Accept",
+    "modal.button-cancel": "Cancel",
+    "modal.button-subscribe": "Subscribe",
+    "modal.button-screenshot": "Make screenshot",
+    
+
+    
+    "modal.title-error-download": "Error",
+    "modal.title-error-download-unsupported-file-format": "You try to download unsupported file format for your subscription.",
+    "modal.title-error-download-update-browser": "You browser doesn't support this operation. Please update your browser or disable thirdparty plugins.",
+
+    "modal.title-3D-screenshot": "Make screenshot and save as...",
+    "modal.title-download-2D-file": "Download drawing file",
+    "modal.title-download-2D-files": "Download all drawing files",
+
+
+
+    
+    "glob.unit-mm": "mm",
+    "glob.unit-cm": "cm",
+    "glob.unit-m": "m",
+    "glob.unit-pcs": "pcs",
+    "glob.unit-ctn": "Ct",
+    "glob.unit-degrees": "∠°",
+
+    
+    "glob.code": "Code",
+
+    "glob.metal-beam": "Terça metálica",
+    "glob.wood-beam": "Terça de madeira",
+    "glob.concrete-beam": "Terça de concreto",
+
+
+
+    "calc.materialsPentRoof": "The Project of calculation of a pent roof materials.",
+    
+    "materialsPentRoof.d3GroundTitle": "Solo",
+    "materialsPentRoof.d3HouseWallsTitle": "Paredes",
+    "materialsPentRoof.d3LoadBearingBeamsTitle": "Vigas",
+    "materialsPentRoof.d3RoofBeamsTitle": "Terças",
+    "materialsPentRoof.d3RoofSheetsTitle": "Cobertura",
+    "materialsPentRoof.d3RoofTitle": "Roof sheets",
+    "materialsPentRoof.d3AxisXTitle": "Axis oX",
+    "materialsPentRoof.d3AxisYTitle": "Axis oY",
+    "materialsPentRoof.d3AxisZTitle": "Axis oZ",
+
+    "materialsPentRoof.d3TxDecorativePlaster": "Pintura stucco",
+    "materialsPentRoof.d3TxBricks": "Tijolo",
+
+    "materialsPentRoof.drwRoofSheetTitle": "Cobertura - Água #1",
+    "materialsPentRoof.drwRoofSheetsTitle": "Cobertura - Água #1",
+
+
+
+    "materialsPentRoof.roof": "Configuração da cobertura",
+    "materialsPentRoof.roof.ridgeLength": "Largura da cobertura",
+    "materialsPentRoof.roof.slopeLength": "Comprimento da água #1",
+    
+    "materialsPentRoof.roofSheets": "Roof sheets",
+    "materialsPentRoof.roofSheets.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsPentRoof.roofSheets.width": "Largura da Telha",
+    "materialsPentRoof.roofSheets.length": "Comprimento da Telha",
+    "materialsPentRoof.roofSheets.count": "Quantidade de Telhas",
+    "materialsPentRoof.roofSheets.rows": "Sheets rows on a roof surface",
+    "materialsPentRoof.roofSheets.cols": "Sheets columns on a roof surface",
+
+    "materialsPentRoof.roofSheetsTopRow": "Água #1",
+    "materialsPentRoof.roofSheetsTopRow.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsPentRoof.roofSheetsTopRow.width": "Largura da Telha",
+    "materialsPentRoof.roofSheetsTopRow.length": "Comprimento da Telha",
+    "materialsPentRoof.roofSheetsTopRow.count": "Quantidade de Telhas",
+    "materialsPentRoof.roofSheetsTopRow.rows": "Sheets rows on a roof surface",
+    "materialsPentRoof.roofSheetsTopRow.cols": "Sheets columns on a roof surface",
+
+    "materialsPentRoof.beams": "Terças (largura mínima 100 mm)",
+    "materialsPentRoof.beams.section": "Section (slice)",
+    "materialsPentRoof.beams.length": "Length of a single beams",
+    "materialsPentRoof.beams.step": "Distância entre as terças",
+    "materialsPentRoof.beams.count": "Quantidade de terças",
+
+    "materialsPentRoof.fasteners": "Fixadores",
+    "materialsPentRoof.fasteners.130249": "PAR FIX PB 12.1/4-14 X 3.1/4 P4 (para terças metálicas)",
+    "materialsPentRoof.fasteners.144254": "PAR P/ MADEIRA 6,0 X 90MM CE (para terças de madeira/concreto)",
+    "materialsPentRoof.fasteners.total": "Quantidade de fixadores",
+
+    "materialsPentRoof.join": "Encaixe",
+    "materialsPentRoof.join.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsPentRoof.join.total": "Quantidade de fixadores",
+    
+    "materialsPentRoof.finishSideStarPlanks": "Acabamento Lateral - Início de Montagem - Rufos",
+    "materialsPentRoof.finishSideStarPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsPentRoof.finishSideStarPlanks.length": "Comprimento padrão do Rufo",
+    "materialsPentRoof.finishSideStarPlanks.overlap": "Comprimento de transpasse do Rufo",
+    "materialsPentRoof.finishSideStarPlanks.count": "Quantidade total de Rufos",
+    "materialsPentRoof.finishSideStarPlanks.total": "Comprimento total",
+
+    "materialsPentRoof.finishSideStartUnit": "Acabamento Lateral - Início de Montagem - Fixadores",
+    "materialsPentRoof.finishSideStartUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsPentRoof.finishSideStartUnit.length": "Distância entre fixações",
+    "materialsPentRoof.finishSideStartUnit.total": "Quantidade de fixadores",
+
+    "materialsPentRoof.finishSideEndPlanks": "Acabamento Lateral - Final de Montagem - Rufos",
+    "materialsPentRoof.finishSideEndPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsPentRoof.finishSideEndPlanks.length": "Comprimento padrão do Rufo",
+    "materialsPentRoof.finishSideEndPlanks.overlap": "Comprimento de transpasse do Rufo",
+    "materialsPentRoof.finishSideEndPlanks.count": "Quantidade total de Rufos",
+    "materialsPentRoof.finishSideEndPlanks.total": "Comprimento total",
+
+    "materialsPentRoof.finishSideEndUnit": "Acabamento Lateral - Final de Montagem - Fixadores",
+    "materialsPentRoof.finishSideEndUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsPentRoof.finishSideEndUnit.length": "Distância entre fixações",
+    "materialsPentRoof.finishSideEndUnit.total": "Quantidade de fixadores",
+    
+    "materialsPentRoof.finishDripPlank": "Acabamento Trapezoidal com pingadeira - Rufos",
+    "materialsPentRoof.finishDripPlank.140188": "ACAB FRONTAL ONDULADO COLONIAL 0,50MM (1METRO) NOVO",
+    "materialsPentRoof.finishDripPlank.length": "Comprimento padrão do Rufo",
+    "materialsPentRoof.finishDripPlank.total": "Quantidade total de Rufos",
+
+    "materialsPentRoof.finishDripRivet": "Acabamento Trapezoidal com pingadeira - Fixadores",
+    "materialsPentRoof.finishDripRivet.130520": "REBITE HERMETICO 4,0 X 15MM",
+    "materialsPentRoof.finishDripRivet.total": "Quantidade de fixadores",
+
+
+
+
+
+
+
+    "calc.materialsGableRoof": "The Project of calculation of a gable roof materials.",
+    
+
+    "materialsGableRoof.d3GroundTitle": "Solo",
+    "materialsGableRoof.d3HouseWallsTitle": "Paredes",
+    "materialsGableRoof.d3LoadBearingBeamsTitle": "Vigas",
+    "materialsGableRoof.d3RoofBeamsTitle": "Terças",
+    "materialsGableRoof.d3RoofSheetsTitle": "Cobertura",
+    "materialsGableRoof.d3RoofTitle": "Roof sheets",
+    "materialsGableRoof.d3AxisXTitle": "Axis oX",
+    "materialsGableRoof.d3AxisYTitle": "Axis oY",
+    "materialsGableRoof.d3AxisZTitle": "Axis oZ",
+
+    "materialsGableRoof.d3TxDecorativePlaster": "Pintura stucco",
+    "materialsGableRoof.d3TxBricks": "Tijolo",
+
+    "materialsGableRoof.drwLeftRoofSheetsTitle": "Cobertura - Água #1",
+    "materialsGableRoof.drwRightRoofSheetsTitle": "Cobertura - Água #2",
+
+
+
+    "materialsGableRoof.roof": "Configuração da cobertura",
+    "materialsGableRoof.roof.ridgeLength": "Largura da cobertura",
+    "materialsGableRoof.roof.slopeLeftLength": "Comprimento da água #1",
+    "materialsGableRoof.roof.slopeRightLength": "Comprimento da água #2",
+    
+    "materialsGableRoof.roofSheetsLeft": "Água #1",
+    "materialsGableRoof.roofSheetsLeft.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsLeft.width": "Largura da Telha",
+    "materialsGableRoof.roofSheetsLeft.length": "Comprimento da Telha",
+    "materialsGableRoof.roofSheetsLeft.count": "Quantidade de Telhas",
+    "materialsGableRoof.roofSheetsLeft.rows": "Sheets rows on a roof surface",
+    "materialsGableRoof.roofSheetsLeft.cols": "Sheets columns on a roof surface",
+
+    "materialsGableRoof.roofSheetsLeftTopRow": "Roof sheets (slope #1, last top row near a ridge)",
+    "materialsGableRoof.roofSheetsLeftTopRow.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsLeftTopRow.width": "Largura da Telha",
+    "materialsGableRoof.roofSheetsLeftTopRow.length": "Comprimento da Telha",
+    "materialsGableRoof.roofSheetsLeftTopRow.count": "Quantidade de Telhas",
+    "materialsGableRoof.roofSheetsLeftTopRow.rows": "Sheets rows on a roof surface",
+    "materialsGableRoof.roofSheetsLeftTopRow.cols": "Sheets columns on a roof surface",
+
+    
+    "materialsGableRoof.roofSheetsRight": "Água #2",
+    "materialsGableRoof.roofSheetsRight.353702": "Largura da Telha",
+    "materialsGableRoof.roofSheetsRight.length": "Comprimento da Telha",
+    "materialsGableRoof.roofSheetsRight.count": "Quantidade de Telhas",
+    "materialsGableRoof.roofSheetsRight.rows": "Sheets rows on a roof surface",
+    "materialsGableRoof.roofSheetsRight.cols": "Sheets columns on a roof surface",
+
+    "materialsGableRoof.roofSheetsRightTopRow": "Roof sheets (slope #2, last top row near a ridge)",
+    "materialsGableRoof.roofSheetsRightTopRow.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsRightTopRow.width": "Largura da Telha",
+    "materialsGableRoof.roofSheetsRightTopRow.length": "Comprimento da Telha",
+    "materialsGableRoof.roofSheetsRightTopRow.count": "Quantidade de Telhas",
+    "materialsGableRoof.roofSheetsRightTopRow.rows": "Sheets rows on a roof surface",
+    "materialsGableRoof.roofSheetsRightTopRow.cols": "Sheets columns on a roof surface",
+
+
+    "materialsGableRoof.beams": "Terças (largura mínima 100 mm)",
+    "materialsGableRoof.beams.section": "Section (slice)",
+    "materialsGableRoof.beams.length": "Length of a single beams",
+    "materialsGableRoof.beams.step": "Distância entre as terças",
+    "materialsGableRoof.beams.count": "Quantidade de terças",
+
+    "materialsGableRoof.fasteners": "Fixadores",
+    "materialsGableRoof.fasteners.130249": "PAR FIX PB 12.1/4-14 X 3.1/4 P4 (para terças metálicas)",
+    "materialsGableRoof.fasteners.144254": "PAR P/ MADEIRA 6,0 X 90MM CE (para terças de madeira/concreto)",
+    "materialsGableRoof.fasteners.total": "Quantidade de fixadores",
+
+    "materialsGableRoof.join": "Encaixe",
+    "materialsGableRoof.join.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.join.total": "Quantidade de fixadores",
+    
+    "materialsGableRoof.finishSideStarPlanks": "Acabamento Lateral - Início de Montagem - Rufos",
+    "materialsGableRoof.finishSideStarPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsGableRoof.finishSideStarPlanks.length": "Comprimento padrão do Rufo",
+    "materialsGableRoof.finishSideStarPlanks.overlap": "Comprimento de transpasse do Rufo",
+    "materialsGableRoof.finishSideStarPlanks.count": "Quantidade total de Rufos",
+    "materialsGableRoof.finishSideStarPlanks.total": "Comprimento total",
+
+    "materialsGableRoof.finishSideStartUnit": "Acabamento Lateral - Início de Montagem - Fixadores",
+    "materialsGableRoof.finishSideStartUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.finishSideStartUnit.length": "Distância entre fixações",
+    "materialsGableRoof.finishSideStartUnit.total": "Quantidade de fixadores",
+
+    "materialsGableRoof.finishSideEndPlanks": "Acabamento Lateral - Final de Montagem - Rufos",
+    "materialsGableRoof.finishSideEndPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsGableRoof.finishSideEndPlanks.length": "Comprimento padrão do Rufo",
+    "materialsGableRoof.finishSideEndPlanks.overlap": "Comprimento de transpasse do Rufo",
+    "materialsGableRoof.finishSideEndPlanks.count": "Quantidade total de Rufos",
+    "materialsGableRoof.finishSideEndPlanks.total": "Comprimento total",
+
+    "materialsGableRoof.finishSideEndUnit": "Acabamento Lateral - Final de Montagem - Fixadores",
+    "materialsGableRoof.finishSideEndUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.finishSideEndUnit.length": "Distância entre fixações",
+    "materialsGableRoof.finishSideEndUnit.total": "Quantidade de fixadores",
+    
+    "materialsGableRoof.finishDripPlank": "Acabamento Trapezoidal com pingadeira - Rufos",
+    "materialsGableRoof.finishDripPlank.140188": "ACAB FRONTAL ONDULADO COLONIAL 0,50MM (1METRO) NOVO",
+    "materialsGableRoof.finishDripPlank.length": "Comprimento padrão do Rufo",
+    "materialsGableRoof.finishDripPlank.total": "Quantidade total de Rufos",
+
+    "materialsGableRoof.finishDripRivet": "Acabamento Trapezoidal com pingadeira - Fixadores",
+    "materialsGableRoof.finishDripRivet.130520": "REBITE HERMETICO 4,0 X 15MM",
+    "materialsGableRoof.finishDripRivet.total": "Quantidade de fixadores",
+
+    "materialsGableRoof.finishInternalRidgePrePint": "Acabamento Interno - Cumeeira - Rufos",
+    "materialsGableRoof.finishInternalRidgePrePint.142962": "ACAB INTERNO PRE-PINT ISOTELHA AÇO/AÇO",
+    "materialsGableRoof.finishInternalRidgePrePint.length": "Length of a single plank",
+    "materialsGableRoof.finishInternalRidgePrePint.overlap": "Overlap of installed planks",
+    "materialsGableRoof.finishInternalRidgePrePint.total": "Comprimento total",
+
+    "materialsGableRoof.finishInternalRidgeRivets": "Acabamento Interno - Cumeeira - Fixadores",
+    "materialsGableRoof.finishInternalRidgeRivets.141577": "REBITE POP ALUMINIO BRANCO 4,0 X 15MM",
+    "materialsGableRoof.finishInternalRidgeRivets.total": "Quantidade de fixadores",
+
+    "materialsGableRoof.ridgeCap": "Tampa da Cumeeira - Rufos",
+    "materialsGableRoof.ridgeCap.140030": "TAMPA DA CUMEEIRA COLONIAL",
+    "materialsGableRoof.ridgeCap.total": "Quantidade Total",
+
+    "materialsGableRoof.ridgeJoin": "Tampa da Cumeeira - Fixadores",
+    "materialsGableRoof.ridgeJoin.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.ridgeJoin.total": "Quantidade de fixadores",
+
+    "materialsGableRoof.ridgeExternalTrapezoid": "Cumeeira externa trapezoidal",
+    "materialsGableRoof.ridgeExternalTrapezoid.140187": "CONJUNTO CUMEEIRA COLONIAL DENTADA - NOVO",
+    "materialsGableRoof.ridgeExternalTrapezoid.total": "Quantidade Total",
+
+    "materialsGableRoof.ridgeExternalTrapezoidTape": "Cumeeira externa trapezoidal - Fita",
+    "materialsGableRoof.ridgeExternalTrapezoidTape.143104": "FITA DE VEDACAO TACKY TAPE (13,71M X 9,5MM)",
+    "materialsGableRoof.ridgeExternalTrapezoidTape.total": "Comprimento total",
+
+    "materialsGableRoof.ridgeExternalTrapezoidJoin": "Cumeeira externa trapezoidal - Fixadores",
+    "materialsGableRoof.ridgeExternalTrapezoidJoin.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.ridgeExternalTrapezoidJoin.total": "Quantidade de fixadores"
+
+}

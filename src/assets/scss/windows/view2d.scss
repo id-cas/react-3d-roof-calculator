@@ -1,0 +1,390 @@
+
+// Локальное свойство
+.__xr {
+    &-win2d-wrp {
+        // box-shadow: 0 4px 4px rgba(192, 214, 225, 0.4);
+    }
+}
+
+
+// Использовать при переносе на Kalk.Pro
+.__xr {
+    &-win2d {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $c-white;
+
+        &.__xr-win2d-fullscreen {
+            position: fixed;
+            z-index: 1000;
+
+            .__xr-win2d-body-cols {
+                margin: 4px;
+            }
+        }
+    }
+
+    &-win2d-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $c-greay-light;
+        min-height: $t-item-side;
+
+        &-separator {
+            display: inline-flex;
+            background: $c-greay-mid;
+            width: 1px;
+            height: 28px;
+            margin: 5px 2px;
+        }
+
+        &-btn {
+            position: relative;
+            display: inline-flex;
+            background: $c-greay-light;
+            padding: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: $c-blue-light;
+            }
+
+            &:active {
+                background-color: $c-blue;
+            }
+
+            &.active {
+                background-color: $c-greay;
+            }
+
+            &-title {
+                display: none;
+            }
+
+            &:hover &-title {
+                @media (hover: hover) and (pointer: fine) {
+                    position: absolute;
+                    display: block;
+                    background-color: $c-white;
+                    line-height: 1.2;
+                    font-size: 14px;
+                    padding: 5px 14px;
+                    // TODO: function border-radius и box-shadow
+                    @include border-radius(4px);
+                    @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+                    left: 20px;
+                    top: 44px;
+                    white-space: nowrap;
+                    width: auto;
+                    text-align: center;
+                    z-index: 200;
+                }
+            }
+
+            &-img {
+                display: block;
+                border: none;
+                margin: 4px;
+                width: 20px;
+                height: 20px;
+            }
+
+            &-reset div{
+                background: url(/public/resources/images/2dviewer/toolbar/reset.svg) no-repeat center center / contain;
+            }
+
+
+            &-zoom-in div{
+                background: url(/public/resources/images/2dviewer/toolbar/zoom-in.svg) no-repeat center center / contain;
+            }
+
+            &-zoom-out div{
+                background: url(/public/resources/images/2dviewer/toolbar/zoom-out.svg) no-repeat center center / contain;
+            }
+            
+
+
+            &-mov-left div{
+                background: url(/public/resources/images/2dviewer/toolbar/arrow.svg) no-repeat center center / contain;
+            }
+
+            &-mov-right div{
+                background: url(/public/resources/images/2dviewer/toolbar/arrow.svg) no-repeat center center / contain;
+                @include rotate(180deg);
+            }
+
+            &-mov-top div{
+                background: url(/public/resources/images/2dviewer/toolbar/arrow.svg) no-repeat center center / contain;
+                @include rotate(90deg);
+            }
+
+            &-mov-bot div{
+                background: url(/public/resources/images/2dviewer/toolbar/arrow.svg) no-repeat center center / contain;
+                @include rotate(270deg);
+            }
+
+
+            &-rot-clock div{
+                background: url(/public/resources/images/2dviewer/toolbar/rotating-arrow.svg) no-repeat center center / contain;
+            }
+
+            &-rot-cclock div{
+                background: url(/public/resources/images/2dviewer/toolbar/rotating-arrow.svg) no-repeat center center / contain;
+                @include flipH();
+            }
+
+
+            &-down div{
+                background: url(/public/resources/images/2dviewer/toolbar/download.svg) no-repeat center center / contain;
+            }
+
+
+            &-full-scr div{
+                background: url(/public/resources/images/2dviewer/toolbar/full-screen.svg) no-repeat center center / contain;
+            }
+
+            &-active {
+                background-color: $c-greay-mid;
+            }
+
+            &-full-scr.__xr-win2d-toolbar-btn-active div{
+                background: url(/public/resources/images/2dviewer/toolbar/minimize.svg) no-repeat center center / contain;
+            }
+
+            &-about div{
+                background: url(/public/resources/images/2dviewer/toolbar/question.svg) no-repeat center center / contain;
+            }
+        }
+    }
+
+    // Селектор для выбора активного чертежа
+    &-win2d-toolbar-drw-selector {
+        width: 100%;
+        height: 28px;
+        font-size: 14px;
+        cursor: pointer;
+
+        &-wrap {
+            position: relative;
+            width: 100%;
+            max-width: 320px;
+            padding: 6px;
+
+            &:hover .__xr-win2d-toolbar-drw-selector-title {
+                @media (hover: hover) and (pointer: fine) {
+                    position: absolute;
+                    display: block;
+                    background-color: $c-white;
+                    line-height: 1.2;
+                    font-size: 14px;
+                    padding: 5px 14px;
+                    // TODO: function border-radius и box-shadow
+                    @include border-radius(4px);
+                    @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+                    left: 20px;
+                    top: 44px;
+                    white-space: nowrap;
+                    width: auto;
+                    text-align: center;
+                    z-index: 200;
+                }
+            }
+        }
+
+        &-title {
+            display: none;
+        }
+    }
+
+    &-win2d-body {
+        position: relative;
+        min-height: 780px;
+
+        &-cols {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            border: 2px dashed $c-greay;
+            margin: 2px 0;
+        }
+    }
+
+
+
+    &-win2d-screen {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        overflow: hidden;
+    }
+
+    &-win2d-viewer {
+        position: relative;
+        height: 100%;
+
+        &-frame{
+            display: inline-block;
+            // border: 1px solid black;
+        }
+        
+    }
+
+
+    &-win2d-splash-screen {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        background: $c-white url(/public/resources/images/2dviewer/viewer/splash-screen.png) no-repeat center center;
+        opacity: 0.5;
+        @include transition(opacity 0.5s);
+        @include transition(left 0.5s);
+        @include transition-delay(0.5s);
+        cursor: pointer;
+        z-index: 70;
+
+        @media screen and (max-width: 720px){
+            background: $c-white url(/public/resources/images/2dviewer/viewer/splash-screen-mob.png) no-repeat center center;
+            background-size: contain;
+            opacity: 0.8;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    
+    // МОДАЛЬНОЕ (ВСПЛЫВАЮЩЩЕ) ОКНО
+    &-modal {
+        position: absolute;
+        overflow: hidden;
+        top: 9999px;
+        left: -9999px;
+        height: 0px;
+        width: 0px;
+        z-index: -100;
+
+        &-open {
+            height: auto;
+            width: auto;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            @include blur-background(2px);
+        }
+
+    }
+
+    &-modal-win {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100px;
+        min-width: 400px;
+        background-color: $c-white;
+        @include border-radius(5px);
+        @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+
+        @media screen and (max-width: 480px){
+            min-width: 300px;
+        }
+
+        @media screen and (max-width: 320px){
+            min-width: 240px;
+        }
+    }
+
+    &-modal-header {
+        position: relative;
+        padding: 8px 28px 8px 8px;
+        height: 20px;
+        border-bottom: 1px solid $c-greay;
+
+        &-title {
+            font-size: 16px;
+            line-height: 1.25;
+            overflow: hidden;
+            white-space:nowrap; 
+            text-overflow: ellipsis;
+        }
+
+        &-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px; 
+            width: 20px;
+            height: 20px;
+            background-color: $c-greay;
+            cursor: pointer;
+            background: $c-white url(/public/resources/images/2dviewer/modal/close.svg) no-repeat center center;
+            background-size: 16px 16px;
+            opacity: 0.5;
+            @include transition(opacity 0.3s);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &-modal-content {
+        position: relative;
+        // padding: 0 0.5 * $sz-gutter 0.5 * $sz-gutter 0.5 * $sz-gutter;
+        padding: 0.5 * $sz-gutter;
+    }
+
+    &-modal-buttons {
+        position: relative;
+        margin: 2 * $sz-gutter auto;
+        text-align: center;
+    }
+
+    &-modal-btn {
+        display: inline-block;
+        position: relative;
+        padding: 0.25 * $sz-gutter 0.5 * $sz-gutter;
+        margin: 0 $sz-gutter;
+        background-color: $c-greay;
+        text-align: center;
+        font-size: 15px;
+        @include border-radius(5px);
+        // @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+        @include box-shadow(0px 0px 0px 1px rgba(0, 0, 0, 0.4));
+        cursor: pointer;
+        @include select(none);
+
+        &:hover {
+            @include box-shadow(0px 0px 0px 2px rgba(0, 0, 0, 0.4));
+        }
+
+        &-accept {
+            background-color: $c-white;
+        }
+    }
+
+
+    &-win2d-modal {
+        &-download-item {
+            margin-bottom: 10px;
+        }
+    }
+}
+

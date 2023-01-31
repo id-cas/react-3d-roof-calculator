@@ -1,0 +1,70 @@
+@import '../../assets/scss/app/variables.scss';
+@import '../../assets/scss/app/mixins.scss';
+
+/* header */
+.__xr {
+    &-header {
+        &-wrap {
+          padding: 30px 0;
+          @include flex-mixin;
+          justify-content: space-between;
+          position: relative;
+        }
+    }
+
+    &-choice-city {
+        padding-left: 28px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -10px;
+            background: url(/public/resources/images/icon-map-pin.svg) no-repeat;
+        
+            ._toggled & {
+              background: url(/public/resources/images/icon-map-pin-white.svg) no-repeat;
+            }
+        }
+
+        a {
+            color: $c-calypso;
+            position: relative;
+            padding-right: 14px;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -2px;
+            width: 0;
+            height: 0;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid $c-calypso;
+        }
+    }
+
+    &-btn-close-city{
+        display: none;
+    } 
+    
+    &-btn-close {
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 30px;
+        position: absolute;
+        right: 0;
+        color: #2D647F;
+
+        @media (max-width: 767px) {
+            text-indent: -9999px;
+        }
+    }
+}

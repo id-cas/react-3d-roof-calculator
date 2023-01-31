@@ -1,0 +1,118 @@
+@import '../../assets/scss/app/variables.scss';
+@import '../../assets/scss/app/mixins.scss';
+
+.__xr {
+    &-radio-item {
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 10px;
+        text-align: center;
+        
+        @media (max-width: 767px) {
+          margin-bottom: 40px;
+
+          &-pic {
+            &::after {
+              width: 36px;
+              height: 36px;
+              margin: -18px 0 0 -18px;
+            }
+          }
+        }
+      
+        &.inactive {
+          cursor: default;
+        }
+      
+        &-label {
+          cursor: pointer;
+        }
+      
+        &-label {
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+        }
+      
+        &-title {
+          font-size: 16px;
+          color: $c-gray;
+          font-weight: normal;
+          display: block;
+          text-align: center;
+        }
+      
+        &-name {
+          text-align: center;
+          font-size: 18px;
+          height: 50px;
+          width: 100%;
+          @include flex-mixin;
+          justify-content: center;
+          color: $c-blue-chill;
+          background: $c-foam;
+          @include border-radius(100px);
+
+          @media (max-width: 767px) {
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      
+        &-pic {
+          position: relative;
+          display: block;
+          margin-bottom: 20px;
+      
+          &::after {
+            content: "";
+            width: 50px;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            height: 50px;
+            margin: -25px 0 0 -25px;
+            box-shadow: 0 0 50px rgba(6, 76, 109, 0.3);
+            @include border-radius(50%);
+            background: $c-white url(/public/resources/images/icon-check.svg) center no-repeat;
+            display: none;
+          }
+        }
+      
+        :checked ~ &-dot {
+          display: block;
+        }
+      
+        .inative &-pic,
+        :checked ~ &-pic {
+          &::after {
+            display: block;
+          }
+        }
+      
+        :checked + &-pic img,
+        &.inactive &-pic img {
+          opacity: 0.25;
+          cursor: default;
+        }
+      
+        :checked ~ &-title,
+        &.inactive &-title {
+          color: $c-nevada;
+          cursor: default;
+        }
+      
+        :checked ~ &-name {
+          color: $c-gray;
+          background: $c-white;
+          box-shadow: 0 1px 2px rgba(45, 100, 127, 0.4);
+        }
+      
+        input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+          margin: 0;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+
+// Локальное свойство
+.__xr {
+    &-winRs-wrp {
+        // box-shadow: 0 4px 4px rgba(192, 214, 225, 0.4);
+    }
+}
+
+
+// Использовать при переносе на Kalk.Pro
+.__xr {
+    &-winRs {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $c-white;
+    }
+
+    &-winRs-table {
+        width: 100%;
+        margin-bottom: 45px;
+
+        th {
+            border: none;
+            padding: 0 0 7px;
+            text-align: left;
+            font-weight: normal;
+            font-size: 18px;
+            color: $c-nevada;
+            font-weight: normal;
+        }
+
+        th + th {
+            text-align: right;
+            padding-left: 10px;
+        }
+
+        td {
+            border: none;
+            padding: 10px 0;
+            // border-top: 1px solid $c-iceberg;
+        }
+
+        tbody tr:first-child td {
+            border: none;
+        }
+
+        td + td {
+            text-align: right;
+            font-weight: 500;
+            padding-left: 10px;
+        }
+
+
+        tbody tr:nth-child(2n+1){
+            background-color: $c-greay-light;
+        }
+
+        tbody tr td:nth-child(2n+1){
+            padding-left: 20px;
+        }
+
+        tbody tr td:nth-child(2n+2){
+            padding-right: 20px;
+        }
+
+        tbody tr:last-child{
+            border-bottom: 2px solid $c-greay-light;
+        }
+    }
+}
+

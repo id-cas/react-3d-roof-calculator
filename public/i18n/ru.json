@@ -1,0 +1,375 @@
+{
+    "cities.header-close": "Закрыть",
+    "cities.header-collapse": "Свернуть",
+    "cities.header-city": "Мой город",
+    "cities.header-default-city": "Калининград",
+
+    "input.select-roof-type-title": "Выбрать тип кровли",
+    "input.roof-type-pent": "Односкатная крыша",
+    "input.roof-type-gable": "Двускатная крыша",
+    "input.roof-type-french": "Мансардная крыша",
+    "input.roof-type-hip": "Вальмова крыша",
+
+    "input.select-roof-params-title": "Укажите размеры крыши вдоль скатов",
+    "input.roof-angle-defined-question": "Определен ли угол наклона крыши?",
+    "input.roof-angle-defined": "Угол наклона известен",
+    "input.roof-angle-defined-short": "Известен",
+    "input.roof-angle-undefined": "Угол наклона неизвестен",
+    "input.roof-angle-undefined-short": "Неизвестен",
+
+    "input.beams-types": "Выберите тип балки (требуется для расчета материалов)",
+    "input.roof-sheets-param-length": "Выберите длину кровельного листа",
+    "input.auto-size": "Авторазмер (определение оптимальной длины)",
+
+
+    "btn.calculate": "Рассчитать",
+    "btn.waiting": "В процессе...",
+    "btn.download": "Сохранить проект",
+    "btn.get-price": "Узнать цену",
+
+
+    "section.3D-title": "Просмотр 3D представления кровли",
+
+    "3d-viewer.toolbar-btn-zoom-in": "Увеличить",
+    "3d-viewer.toolbar-btn-zoom-out": "Уменьшить",
+    "3d-viewer.toolbar-btn-ruler": "Рулетка",
+    "3d-viewer.toolbar-btn-screenshot": "Скриншот",
+    "3d-viewer.toolbar-btn-download-files": "Скачать сцену",
+    "3d-viewer.toolbar-btn-scene-rotate": "Вращать сцену",
+    "3d-viewer.toolbar-btn-scene-move": "Двигать сцену",
+    "3d-viewer.toolbar-btn-fullscreen": "Полноэкранный режим",
+    "3d-viewer.toolbar-btn-ar": "AR - Дополненная реальность",
+    "3d-viewer.toolbar-btn-perspective-inc": "Перспективное приращение",
+    "3d-viewer.toolbar-btn-perspective-dec": "Перспективное уменьшение",
+    "3d-viewer.toolbar-btn-perspective-res": "Сбросить перспективу",
+    "3d-viewer.toolbar-btn-about": "Справка",
+
+    "3d-viewer.toolbar-label-camera": "Камера",
+
+    "3d-viewer.label-download-png": "PNG",
+    "3d-viewer.label-download-pdf": "PDF",
+
+    "3d-viewer.menu-btn-visibility": "Видимость",
+    "3d-viewer.menu-btn-textures": "Выбрать материал",
+    "3d-viewer.menu-btn-colors": "Выбрать цвет",
+
+
+
+    "section.2D-title": "Чертежи",
+
+    "2d-viewer.btn-reset": "Сбросить",
+    "2d-viewer.btn-zoom-in": "Увеличить",
+    "2d-viewer.btn-zoom-out": "Уменьшить",
+    "2d-viewer.btn-move-left": "Двигать влево",
+    "2d-viewer.btn-move-right": "Двигать вправо",
+    "2d-viewer.btn-move-top": "Двигать вверх",
+    "2d-viewer.btn-move-bottom": "Двигать вниз",
+    "2d-viewer.btn-rotate-clockwise": "Вращать по часовой стрелке",
+    "2d-viewer.btn-rotate-counterclockwise": "Вращать против часовой стрелке",
+    "2d-viewer.btn-download-files": "Скачать черетежи",
+    "2d-viewer.btn-fullscreen": "Полноэкранные режим",
+    "2d-viewer.btn-about": "Справка",
+
+    "2d-viewer.drawings-selector-title": "Выбрать чертеж",
+
+
+    "2d-viewer.label-download-pdf-all": "PDF (все чертежи)",
+    "2d-viewer.label-download-pdf": "PDF (только активный)",
+    "2d-viewer.label-download-png": "PNG (только активный)",
+    "2d-viewer.label-download-svg": "SVG (только активный)",
+
+    "2d-viewer.pdf-label-drw-logo": "Логотип компании",
+    "2d-viewer.pdf-label-drw-title": "Наименование",
+    "2d-viewer.pdf-label-drw-author": "Автор",
+    "2d-viewer.pdf-label-drw-date": "Дата",
+    "2d-viewer.pdf-label-drw-pages": "Страница",
+
+
+
+    "section.RS-title": "Материалы и размеры",
+
+
+
+    "modal.title-error": "Ошибка!",
+    "modal.title-attention": "Внимание!",
+    "modal.title-download": "Скачать файл(ы) 3D сцены",
+    "modal.title-select-video-input": "Выбрать камеру",
+    "modal.title-about": "Справка",
+
+    "modal.content-camera-error-enumerate-media-devices": "Невозможно получить список медиаустройств.",
+    "modal.content-camera-error-enumerate-cameras": "Невозможно получить список камер устройства.",
+    "modal.content-camera-error-not-found": "На вашем устройстве не обнаружена камера. Используйте другое устройство с камерой.",
+    "modal.content-camera-error-exception": "При подключении к камере на вашем устройстве возникла ошибка(и). Или вы отклонили запрос на доступ к камере.",
+    "modal.content-about": "<div style=\"width: 240px; margin: 0 auto;\"><p>&nbsp;</p><p>Разработанно <a target=\"_blank\" href=\"https://kalk.pro/en/\">Kalk.Pro</a></p><p>Спонсор продукта <a target=\"_blank\" href=\"https://kingspan-isoeste.com.br/\">KingSpan</a></p></div>",
+
+    "modal.content-subscribe": "У вас должна быть активная подписка.",
+    
+    "modal.button-download": "Скачать",
+    "modal.button-accept": "Принять",
+    "modal.button-cancel": "Отмена",
+    "modal.button-subscribe": "Подписаться",
+    "modal.button-screenshot": "Сделать скриншот",
+    
+
+    
+    "modal.title-error-download": "Ошибка",
+    "modal.title-error-download-unsupported-file-format": "Вы пытаетесь загрузить файл неподдерживаемого формата для вашей подписки.",
+    "modal.title-error-download-update-browser": "Ваш браузер не поддерживает эту операцию. Пожалуйста, обновите ваш браузер или отключите сторонние плагины.",
+
+    "modal.title-3D-screenshot": "Сделать скриншот и сохранить как...",
+    "modal.title-download-2D-file": "Скачать файл чертежа",
+    "modal.title-download-2D-files": "Скачать все файлы с чертежами",
+
+
+
+    
+    "glob.unit-mm": "мм",
+    "glob.unit-cm": "см",
+    "glob.unit-m": "м",
+    "glob.unit-pcs": "шт",
+    "glob.unit-degrees": "∠°",
+
+    
+    "glob.code": "Артикул",
+
+    "glob.metal-beam": "Металлические балки",
+    "glob.wood-beam": "Деревянные балки",
+    "glob.concrete-beam": "Бетонные балки",
+
+
+
+    "calc.materialsPentRoof": "Проект расчета материалов односкатной крыши.",
+    
+    "materialsPentRoof.d3GroundTitle": "Основание",
+    "materialsPentRoof.d3HouseWallsTitle": "Стены дома",
+    "materialsPentRoof.d3LoadBearingBeamsTitle": "Несущие балки",
+    "materialsPentRoof.d3RoofBeamsTitle": "Несущие балки для кровельных листов",
+    "materialsPentRoof.d3RoofSheetsTitle": "Кровельные листы",
+    "materialsPentRoof.d3RoofTitle": "Кровельные листы",
+    "materialsPentRoof.d3AxisXTitle": "Ось oX",
+    "materialsPentRoof.d3AxisYTitle": "Ось oY",
+    "materialsPentRoof.d3AxisZTitle": "Ось oZ",
+
+    "materialsPentRoof.d3TxDecorativePlaster": "Настенная декоративная штукатурка",
+    "materialsPentRoof.d3TxBricks": "Кирпичи",
+
+    "materialsPentRoof.drwRoofSheetTitle": "Одинарный кровельный лист",
+    "materialsPentRoof.drwRoofSheetsTitle": "Расположение кровельных листов",
+
+
+
+    "materialsPentRoof.roof": "Парамтеры кровли",
+    "materialsPentRoof.roof.ridgeLength": "Длина крыши вдоль конька",
+    "materialsPentRoof.roof.slopeLength": "Длина крыши вдоль ската",
+    
+    "materialsPentRoof.roofSheets": "Кровельные листы",
+    "materialsPentRoof.roofSheets.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsPentRoof.roofSheets.width": "Ширина одного листа",
+    "materialsPentRoof.roofSheets.length": "Длина одного листа",
+    "materialsPentRoof.roofSheets.count": "Количество листов",
+    "materialsPentRoof.roofSheets.rows": "Количество рядов кровельных листов",
+    "materialsPentRoof.roofSheets.cols": "Количество вертикальных рядов кровельных листов",
+
+    "materialsPentRoof.roofSheetsTopRow": "Кровельные листы (last top row near a ridge)",
+    "materialsPentRoof.roofSheetsTopRow.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsPentRoof.roofSheetsTopRow.width": "Ширина одного листа",
+    "materialsPentRoof.roofSheetsTopRow.length": "Длина одного листа",
+    "materialsPentRoof.roofSheetsTopRow.count": "Количество листов",
+    "materialsPentRoof.roofSheetsTopRow.rows": "Количество рядов кровельных листов",
+    "materialsPentRoof.roofSheetsTopRow.cols": "Количество вертикальных рядов кровельных листов",
+
+    "materialsPentRoof.beams": "Несущие металлические балки (минимальная ширина 100 мм)",
+    "materialsPentRoof.beams.section": "Сечение (срез)",
+    "materialsPentRoof.beams.length": "Длина одной балки",
+    "materialsPentRoof.beams.step": "Расстояние (шаг) между балками",
+    "materialsPentRoof.beams.count": "Количество балок",
+
+    "materialsPentRoof.fasteners": "Крепеж",
+    "materialsPentRoof.fasteners.130249": "PAR FIX PB 12.1/4-14 X 3.1/4 P4 (для металлических балок)",
+    "materialsPentRoof.fasteners.144254": "PAR P/ MADEIRA 6,0 X 90MM CE (для деревянных/бетонных балок)",
+    "materialsPentRoof.fasteners.total": "Количество крепежа",
+
+    "materialsPentRoof.join": "Соединения",
+    "materialsPentRoof.join.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsPentRoof.join.total": "Количество",
+    
+    "materialsPentRoof.finishSideStarPlanks": "Боковая планка СТАРТ",
+    "materialsPentRoof.finishSideStarPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsPentRoof.finishSideStarPlanks.length": "Длина одной планки",
+    "materialsPentRoof.finishSideStarPlanks.overlap": "Нахлест",
+    "materialsPentRoof.finishSideStarPlanks.count": "Количество",
+    "materialsPentRoof.finishSideStarPlanks.total": "Общая длина",
+
+    "materialsPentRoof.finishSideStartUnit": "Соединения боковой планка СТАРТ",
+    "materialsPentRoof.finishSideStartUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsPentRoof.finishSideStartUnit.length": "Длина одного соединения",
+    "materialsPentRoof.finishSideStartUnit.total": "Количество",
+
+    "materialsPentRoof.finishSideEndPlanks": "Боковая планка ФИНИШ",
+    "materialsPentRoof.finishSideEndPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsPentRoof.finishSideEndPlanks.length": "Длина одной планки",
+    "materialsPentRoof.finishSideEndPlanks.overlap": "Нахлест",
+    "materialsPentRoof.finishSideEndPlanks.count": "Количество",
+    "materialsPentRoof.finishSideEndPlanks.total": "Общая длина",
+
+    "materialsPentRoof.finishSideEndUnit": "Соединения боковой планка ФИНИШ",
+    "materialsPentRoof.finishSideEndUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsPentRoof.finishSideEndUnit.length": "Длина одного соединения",
+    "materialsPentRoof.finishSideEndUnit.total": "Количество",
+    
+    "materialsPentRoof.finishDripPlank": "Трапецивидная капельная планка",
+    "materialsPentRoof.finishDripPlank.140188": "ACAB FRONTAL ONDULADO COLONIAL 0,50MM (1METRO) NOVO",
+    "materialsPentRoof.finishDripPlank.length": "Длина одной планки",
+    "materialsPentRoof.finishDripPlank.total": "Количество",
+
+    "materialsPentRoof.finishDripRivet": "Крепления трапецивидной капельной планки",
+    "materialsPentRoof.finishDripRivet.130520": "REBITE HERMETICO 4,0 X 15MM",
+    "materialsPentRoof.finishDripRivet.length": "Длина крепления",
+    "materialsPentRoof.finishDripRivet.total": "Общая длина",
+
+
+
+
+
+
+
+    "calc.materialsGableRoof": "Проект расчета материалов двускатной крыши.",
+    
+
+    "materialsGableRoof.d3GroundTitle": "Основание",
+    "materialsGableRoof.d3HouseWallsTitle": "Стены дома",
+    "materialsGableRoof.d3LoadBearingBeamsTitle": "Несущие балки",
+    "materialsGableRoof.d3RoofBeamsTitle": "Несущие балки кровельных листов",
+    "materialsGableRoof.d3RoofSheetsTitle": "Кровельные листы",
+    "materialsGableRoof.d3RoofTitle": "Кровельные листы",
+    "materialsGableRoof.d3AxisXTitle": "Ось oX",
+    "materialsGableRoof.d3AxisYTitle": "Ось oY",
+    "materialsGableRoof.d3AxisZTitle": "Ось oZ",
+
+    "materialsGableRoof.d3TxDecorativePlaster": "Настенная декоративная штукатурка",
+    "materialsGableRoof.d3TxBricks": "Кирпичи",
+
+    "materialsGableRoof.drwLeftRoofSheetsTitle": "Кровельный скат #1 (листы)",
+    "materialsGableRoof.drwRightRoofSheetsTitle": "Кровельный скат #2 (листы)",
+
+
+
+    "materialsGableRoof.roof": "Параметры крыши",
+    "materialsGableRoof.roof.ridgeLength": "Длина крыши вдоль конька",
+    "materialsGableRoof.roof.slopeLeftLength": "Длина крыши вдоль ската #1",
+    "materialsGableRoof.roof.slopeRightLength": "Длина крыши вдоль ската #2",
+    
+    "materialsGableRoof.roofSheetsLeft": "Кровельные листы (slope #1)",
+    "materialsGableRoof.roofSheetsLeft.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsLeft.width": "Ширина одного листа",
+    "materialsGableRoof.roofSheetsLeft.length": "Длина одного листа",
+    "materialsGableRoof.roofSheetsLeft.count": "Количество листов",
+    "materialsGableRoof.roofSheetsLeft.rows": "Количество рядов кровельных листов",
+    "materialsGableRoof.roofSheetsLeft.cols": "Количество вертикальных рядов кровельных листов",
+
+    "materialsGableRoof.roofSheetsLeftTopRow": "Кровельные листы (скат #1, последний ряд вверху возле конька)",
+    "materialsGableRoof.roofSheetsLeftTopRow.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsLeftTopRow.width": "Ширина одного листа",
+    "materialsGableRoof.roofSheetsLeftTopRow.length": "Длина одного листа",
+    "materialsGableRoof.roofSheetsLeftTopRow.count": "Количество листов",
+    "materialsGableRoof.roofSheetsLeftTopRow.rows": "Количество рядов кровельных листов",
+    "materialsGableRoof.roofSheetsLeftTopRow.cols": "Количество вертикальных рядов кровельных листов",
+
+    
+    "materialsGableRoof.roofSheetsRight": "Кровельные листы (slope #2)",
+    "materialsGableRoof.roofSheetsRight.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsRight.width": "Ширина одного листа",
+    "materialsGableRoof.roofSheetsRight.length": "Длина одного листа",
+    "materialsGableRoof.roofSheetsRight.count": "Количество листов",
+    "materialsGableRoof.roofSheetsRight.rows": "Количество рядов кровельных листов",
+    "materialsGableRoof.roofSheetsRight.cols": "Количество вертикальных рядов кровельных листов",
+
+    "materialsGableRoof.roofSheetsRightTopRow": "Кровельные листы (скат #2, последний ряд вверху возле конька)",
+    "materialsGableRoof.roofSheetsRightTopRow.353702": "ISOTELHA COLONIAL PIR AP 40MM-RAL8023/RAL9003-0,43 X 0,35MM",
+    "materialsGableRoof.roofSheetsRightTopRow.width": "Ширина одного листа",
+    "materialsGableRoof.roofSheetsRightTopRow.length": "Длина одного листа",
+    "materialsGableRoof.roofSheetsRightTopRow.count": "Количество листов",
+    "materialsGableRoof.roofSheetsRightTopRow.rows": "Количество рядов кровельных листов",
+    "materialsGableRoof.roofSheetsRightTopRow.cols": "Количество вертикальных рядов кровельных листов",
+
+
+    "materialsGableRoof.beams": "Несущие металлические балки (минимальная ширина 100 мм)",
+    "materialsGableRoof.beams.section": "Сечение (срез)",
+    "materialsGableRoof.beams.length": "Длина одной балки",
+    "materialsGableRoof.beams.step": "Расстояние (шаг) между балками",
+    "materialsGableRoof.beams.count": "Количество балок",
+
+    "materialsGableRoof.fasteners": "Крепеж",
+    "materialsGableRoof.fasteners.130249": "PAR FIX PB 12.1/4-14 X 3.1/4 P4 (для металлических балок)",
+    "materialsGableRoof.fasteners.144254": "PAR P/ MADEIRA 6,0 X 90MM CE (для деревянных/бетонных балок)",
+    "materialsGableRoof.fasteners.total": "Количество крепежа",
+	
+    "materialsGableRoof.join": "Join",
+    "materialsGableRoof.join.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.join.total": "Количество",
+    
+    "materialsGableRoof.finishSideStarPlanks": "Боковая планка СТАРТ",
+    "materialsGableRoof.finishSideStarPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsGableRoof.finishSideStarPlanks.length": "Длина одной планки",
+    "materialsGableRoof.finishSideStarPlanks.overlap": "Нахлест",
+    "materialsGableRoof.finishSideStarPlanks.count": "Количество",
+    "materialsGableRoof.finishSideStarPlanks.total": "Общая длина",
+
+    "materialsGableRoof.finishSideStartUnit": "Соединения боковой планка СТАРТ",
+    "materialsGableRoof.finishSideStartUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.finishSideStartUnit.length": "Длина одного соединения",
+    "materialsGableRoof.finishSideStartUnit.total": "Количество",
+
+    "materialsGableRoof.finishSideEndPlanks": "Боковая планка ФИНИШ",
+    "materialsGableRoof.finishSideEndPlanks.140037": "RUFO DE ACABAMENTO LATERAL INFERIOR COLONIAL",
+    "materialsGableRoof.finishSideEndPlanks.length": "Длина одной планки",
+    "materialsGableRoof.finishSideEndPlanks.overlap": "Нахлест",
+    "materialsGableRoof.finishSideEndPlanks.count": "Количество",
+    "materialsGableRoof.finishSideEndPlanks.total": "Общая длина",
+
+    "materialsGableRoof.finishSideEndUnit": "Соединения боковой планка ФИНИШ",
+    "materialsGableRoof.finishSideEndUnit.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.finishSideEndUnit.length": "Длина одного соединения",
+    "materialsGableRoof.finishSideEndUnit.total": "Количество",
+    
+    "materialsGableRoof.finishDripPlank": "Трапецивидная капельная планка",
+    "materialsGableRoof.finishDripPlank.140188": "ACAB FRONTAL ONDULADO COLONIAL 0,50MM (1METRO) NOVO",
+    "materialsGableRoof.finishDripPlank.length": "Длина одной планки",
+    "materialsGableRoof.finishDripPlank.total": "Количество",
+
+    "materialsGableRoof.finishDripRivet": "Крепления трапецивидной капельной планки",
+    "materialsGableRoof.finishDripRivet.130520": "REBITE HERMETICO 4,0 X 15MM",
+    "materialsGableRoof.finishDripRivet.length": "Длина крепления",
+    "materialsGableRoof.finishDripRivet.total": "Общая длина",
+
+    "materialsGableRoof.finishInternalRidgePrePint": "Inernal ridge finishing",
+    "materialsGableRoof.finishInternalRidgePrePint.142962": "ACAB INTERNO PRE-PINT ISOTELHA AÇO/AÇO",
+    "materialsGableRoof.finishInternalRidgePrePint.length": "Длина одной планки",
+    "materialsGableRoof.finishInternalRidgePrePint.overlap": "Нахлест",
+    "materialsGableRoof.finishInternalRidgePrePint.total": "Общая длина",
+
+    "materialsGableRoof.finishInternalRidgeRivets": "Внутренняя отделка конька (заклепки)",
+    "materialsGableRoof.finishInternalRidgeRivets.141577": "REBITE POP ALUMINIO BRANCO 4,0 X 15MM",
+    "materialsGableRoof.finishInternalRidgeRivets.total": "Количество",
+
+    "materialsGableRoof.ridgeCap": "Коньковый колпак (покрытие)",
+    "materialsGableRoof.ridgeCap.140030": "TAMPA DA CUMEEIRA COLONIAL",
+    "materialsGableRoof.ridgeCap.total": "Количество",
+
+    "materialsGableRoof.ridgeJoin": "Коньковый колпак (соединение)",
+    "materialsGableRoof.ridgeJoin.130248": "TAMPA DA CUMEEIRA COLONIAL",
+    "materialsGableRoof.ridgeJoin.total": "Количество",
+
+    "materialsGableRoof.ridgeExternalTrapezoid": "Трапеция внешнего конька",
+    "materialsGableRoof.ridgeExternalTrapezoid.140187": "CONJUNTO CUMEEIRA COLONIAL DENTADA - NOVO",
+    "materialsGableRoof.ridgeExternalTrapezoid.total": "Количество",
+
+    "materialsGableRoof.ridgeExternalTrapezoidTape": "Трапеция внешнего конька (лента)",
+    "materialsGableRoof.ridgeExternalTrapezoidTape.143104": "FITA DE VEDACAO TACKY TAPE (13,71M X 9,5MM)",
+    "materialsGableRoof.ridgeExternalTrapezoidTape.total": "Общая длина",
+
+    "materialsGableRoof.ridgeExternalTrapezoidJoin": "Трапеция внешнего конька (соединение)",
+    "materialsGableRoof.ridgeExternalTrapezoidJoin.130248": "PAR COSTURA PB1/4-14 X 7/8 P1",
+    "materialsGableRoof.ridgeExternalTrapezoidJoin.total": "Количество"
+
+}

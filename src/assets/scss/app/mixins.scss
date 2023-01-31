@@ -1,0 +1,18 @@
+/* mixins */
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin flex-mixin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

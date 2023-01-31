@@ -1,0 +1,27 @@
+$base: 1rem;
+
+// Gutters
+$gutter: $base;
+$gutter-half: 0.5 * $gutter;
+$gutter-double: 2 * $gutter;
+
+/* primary vars */
+$c-black: #000;
+$c-white: #fff;
+$c-gray: #070707;
+$c-gray-light: #DDDDDD;
+$c-teal-blue: #064C6D;
+$c-malibu: #8EE0F5;
+$c-nevada: #5B686F;
+$c-calypso: #2D647F;
+$c-blue-chill: #0D71A5;
+$c-foam: #DDF2FC;
+$c-kalkpro: #FFD71B;
+$c-picasso: #FFEC94;
+$c-crete: #84742B;
+$c-pattens-blue: #DEF4FF;
+$c-prussian-blue: #002D43;
+$c-deep-cerulian: #0075AB;
+$c-iceberg: #E8F3F8;
+$c-error: #FF9191;
+$align-center: center;

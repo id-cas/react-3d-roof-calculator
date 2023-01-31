@@ -1,0 +1,679 @@
+// Локальное свойство
+.__xr {
+    &-win3d-wrp {
+        // box-shadow: 0 4px 4px rgba(192, 214, 225, 0.4);
+    }
+}
+
+
+// Использовать при переносе на Kalk.Pro
+.__xr {
+    &-win3d {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $c-white;
+
+        &.__xr-win3d-fullscreen {
+            position: fixed;
+            z-index: 1000;
+
+            .__xr-win3d-body-cols {
+                margin: 4px;
+            }
+        }
+    }
+
+    &-win3d-toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $c-greay-light;
+        min-height: $t-item-side;
+
+        &-separator {
+            display: inline-flex;
+            background: $c-greay-mid;
+            width: 1px;
+            height: 28px;
+            margin: 5px 2px;
+        }
+
+        &-btn {
+            position: relative;
+            display: inline-flex;
+            background: $c-greay-light;
+            padding: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            
+            &:hover {
+                background-color: $c-blue-light;
+            }
+
+            &:active {
+                background-color: $c-blue;
+            }
+
+            &.active {
+                background-color: $c-greay;
+            }
+
+            &-title {
+                display: none;
+            }
+
+            &:hover &-title {
+                @media (hover: hover) and (pointer: fine) {
+                    position: absolute;
+                    display: block;
+                    background-color: $c-white;
+                    line-height: 1.2;
+                    font-size: 14px;
+                    padding: 5px 14px;
+                    // TODO: function border-radius и box-shadow
+                    @include border-radius(4px);
+                    @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+                    left: 20px;
+                    top: 44px;
+                    white-space: nowrap;
+                    width: auto;
+                    text-align: center;
+                    z-index: 200;
+                }
+            }
+
+            &-img {
+                display: block;
+                border: none;
+                margin: 4px;
+                width: 20px;
+                height: 20px;
+            }
+
+
+            &-zoom-in div{
+                background: url(/public/resources/images/3dviewer/toolbar/zoom-in.svg) no-repeat center center / contain;
+            }
+
+            &-zoom-out div{
+                background: url(/public/resources/images/3dviewer/toolbar/zoom-out.svg) no-repeat center center / contain;
+            }
+
+            &-ruler div{
+                background: url(/public/resources/images/3dviewer/toolbar/ruler.svg) no-repeat center center / contain;
+            }
+
+
+
+
+            &-scr-shot div{
+                background: url(/public/resources/images/3dviewer/toolbar/screenshot.svg) no-repeat center center / contain;
+            }
+
+            &-down div{
+                background: url(/public/resources/images/3dviewer/toolbar/download.svg) no-repeat center center / contain;
+            }
+
+
+            &-scn-rot div{
+                background: url(/public/resources/images/3dviewer/toolbar/scene-rotate.svg) no-repeat center center / contain;
+            }
+
+            &-scn-mov div{
+                background: url(/public/resources/images/3dviewer/toolbar/scene-move.svg) no-repeat center center / contain;
+            }
+
+
+            &-ar div{
+                background: url(/public/resources/images/3dviewer/toolbar/ar.svg) no-repeat center center / contain;
+            }
+
+            &-per-inc div{
+                background: url(/public/resources/images/3dviewer/toolbar/perspective.svg) no-repeat center center / contain;
+                @include rotate(-90deg);
+            }
+
+            &-per-dec div{
+                background: url(/public/resources/images/3dviewer/toolbar/perspective.svg) no-repeat center center / contain;
+                @include rotate(90deg);
+            }
+
+            &-per-res div{
+                background: url(/public/resources/images/3dviewer/toolbar/grid.svg) no-repeat center center / contain;
+            }
+
+
+
+            &-full-scr div{
+                background: url(/public/resources/images/3dviewer/toolbar/full-screen.svg) no-repeat center center / contain;
+            }
+
+            &-active {
+                background-color: $c-greay-mid;
+            }
+
+            &-full-scr.__xr-win3d-toolbar-btn-active div{
+                background: url(/public/resources/images/3dviewer/toolbar/minimize.svg) no-repeat center center / contain;
+            }
+
+            &-about div{
+                background: url(/public/resources/images/3dviewer/toolbar/question.svg) no-repeat center center / contain;
+            }
+        }
+    }
+
+    &-win3d-body {
+        position: relative;
+        min-height: 600px;
+
+        &-cols {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            border: 2px dashed $c-greay;
+            margin: 2px 0;
+        }
+    }
+
+
+    &-win3d-menu {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;        
+        left: 0px;
+        width: 300px;
+        border-right: 1px solid $c-greay;
+        background-color: $c-white;
+        @include transition(width 0.5s);
+        @include transition-delay(0.5s);
+        z-index: 100;
+
+        &.__xr-win3d-menu-min {
+            width: $sz-gutter;
+ 
+            .__xr-win3d-menu-container {
+                opacity: 0;
+                @include transition-delay(0s);
+                @include transition-duration(0.5s);
+                
+            }
+        }
+
+        &-container {
+            overflow-x: hidden;
+            position: relative;
+            // padding: 0.5 * $sz-gutter;
+            background-color: $c-white;
+            height: 100%;
+            opacity: 1;
+            @include transition(opacity 0.5s);
+            @include transition-delay(1s);
+           
+        }
+
+        &-btn {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 40px;
+            @include border-radius(8px);
+            border: 1px solid $c-greay;
+            right: 0;
+            top: 50%;
+            transform: translate(50%, -50%);
+            cursor: pointer;
+            z-index: 2;
+            background: $c-white url(/public/resources/images/3dviewer/menu/left-arrow.svg) no-repeat center center;
+            background-size: 50%;
+            @include transition(background-image 1s ease-in);
+
+            &.__xr-win3d-menu-min {
+                background: $c-white url(/public/resources/images/3dviewer/menu/right-arrow.svg) no-repeat center center;
+                background-size: 50%;
+            }
+        }
+
+        &-item {
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: flex;
+            position: relative;
+            // margin: 0.5 * $sz-gutter 0;
+            line-height: 1.2;
+            font-size: 14px;
+
+            &-btn {
+                display: inline-flex;
+                width: 255px;
+                cursor: pointer;
+                // color: $c-greay-very-darker;
+                color: $c-black;
+
+                &-wrap {
+                    padding: 0.5 * $sz-gutter;
+
+                    &:hover {
+                        background-color: $c-greay-light;
+                        // .__xr-win3d-menu-item-btn{
+                        //     color: $c-black;
+                        // }
+                    }
+                }
+            }
+
+            &-state {
+                display: inline-flex;
+                width: 10px;
+                height: 16px;
+                background: url(/public/resources/images/3dviewer/menu/down-arrow.svg) no-repeat center center;
+                background-size: contain;
+                cursor: pointer;
+            }
+
+            &.__xr-win3d-menu-item-open {
+                .__xr-win3d-menu-item-state {
+                    background: url(/public/resources/images/3dviewer/menu/up-arrow.svg) no-repeat center center;
+                }
+
+                .__xr-win3d-menu-item-sub {
+                    max-height: 2000px;
+                }
+            }
+        }
+
+        &-item-sub {
+            display: block;
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            @include transition(max-height 0.1s);
+
+            // &-sub {
+            //     color: $c-black;
+            //     opacity: 0.5;
+            //     @include transition(opacity 0.1s);
+
+            //     &:hover{
+            //         opacity: 1;
+            //     }
+            // }
+
+            // Visibility
+            &-visibility {
+                position: relative;
+                cursor: pointer;
+                margin: 0.5 * $sz-gutter 0.5 * $sz-gutter $sz-gutter 0.5 * $sz-gutter;
+                padding-left: 30px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    height: 16px;
+                    width: 16px;
+                    background: url(/public/resources/images/3dviewer/menu/eye.svg) no-repeat center center;
+                }
+
+                &-none {
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: 0px;
+                        top: 7px;
+                        height: 1px;
+                        width: 16px;
+                        @include transition(opacity 0.1s);
+                        background: $c-black;
+                        transform: rotate(-30deg);
+                    }
+                }
+            }
+
+            // Textures
+            &-textures {
+                position: relative;
+                color: $c-black;
+                margin: 0.5 * $sz-gutter 0.5 * $sz-gutter $sz-gutter 0.5 * $sz-gutter;
+                padding-left: 30px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    height: 16px;
+                    width: 16px;
+                    background: url(/public/resources/images/3dviewer/menu/texture.svg) no-repeat center center;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &-texture {
+                margin: 0 $sz-gutter $sz-gutter $sz-gutter;
+                cursor: pointer;
+                
+
+                // // Disable child elements events
+                // &-img, &-title{
+                //     pointer-events: none;
+                // }
+
+                &-img {
+                    width: 100%;
+                    height: 60px;
+                    background-size: cover;
+                    background-color: $c-greay;
+                    @include border-radius(5px);
+                    @include box-shadow(0px 0px 4px 1px rgba(0, 0, 0, 0.5));
+
+                    &:hover{
+                        @include box-shadow(0px 0px 4px 2px rgba(0, 0, 0, 0.5));
+                    }
+                }
+
+                &-selected &-img{
+                    @include box-shadow(0px 0px 4px 2px rgba(0, 0, 0, 0.5));
+                }
+
+                &-selected{
+                    cursor: auto;
+                }
+
+                &-title {
+                    width: 100%;
+                    color: $c-black;
+                    padding: 0.5 * 0.25 * $sz-gutter 0 0 0;
+                    font-size: 12px;
+                }
+            }
+
+
+
+            // Colors
+            &-colors {
+                position: relative;
+                color: $c-black;
+                margin: 0.5 * $sz-gutter 0.5 * $sz-gutter $sz-gutter 0.5 * $sz-gutter;
+                padding-left: 30px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    height: 16px;
+                    width: 16px;
+                    background: url(/public/resources/images/3dviewer/menu/paint-brush.svg) no-repeat center center;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &-color {
+                display: inline-block;
+                margin: 0 $sz-gutter $sz-gutter $sz-gutter;
+                cursor: pointer;
+                
+
+                // // Disable child elements events
+                // &-img, &-title{
+                //     pointer-events: none;
+                // }
+
+                &-block {
+                    width: 60px;
+                    height: 60px;
+                    background-size: cover;
+                    background-color: $c-greay;
+                    @include border-radius(5px);
+                    @include box-shadow(0px 0px 4px 0px rgba(0, 0, 0, 0.5));
+
+                    &:hover{
+                        @include box-shadow(0px 0px 4px 2px rgba(0, 0, 0, 0.5));
+                    }
+                }
+
+                &-selected &-block{
+                    @include box-shadow(0px 0px 4px 2px rgba(0, 0, 0, 0.5));
+                }
+
+                &-selected{
+                    cursor: auto;
+                }
+
+                &-title {
+                    width: 100%;
+                    color: $c-black;
+                    padding: 0.5 * 0.25 * $sz-gutter 0 0 0;
+                    font-size: 12px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &-win3d-screen {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        overflow: hidden;
+    }
+
+    &-win3d-ruler {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        padding: 8px 8px 8px 36px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $c-white;
+        min-width: 100px;
+        text-align: right;
+        z-index: 50;
+
+        &::before {
+            display: block;
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url(/public/resources/images/3dviewer/ruler/ruler.svg) no-repeat center center;
+            top: 8px;
+            left: 8px;
+        }
+
+        &-blured {
+            cursor: pointer;
+
+            & span{
+                @include blur(3px);
+            }
+        }
+    }
+
+
+    &-win3d-splash-screen {
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 300px;
+        bottom: 0px;
+        right: 0px;
+        background: $c-white url(/public/resources/images/3dviewer/viewer/splash-screen.png) no-repeat center center;
+        opacity: 0.5;
+        @include transition(opacity 0.5s);
+        @include transition(left 0.5s);
+        @include transition-delay(0.5s);
+        cursor: pointer;
+        z-index: 70;
+
+        @media screen and (max-width: 720px){
+            background: $c-white url(/public/resources/images/3dviewer/viewer/splash-screen-mob.png) no-repeat center center;
+            background-size: contain;
+            opacity: 0.8;
+        }
+
+        &.__xr-win3d-menu-max {
+            left: 0px;
+        }
+        
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &-win3d-canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-win3d-video {
+        position: absolute;
+        object-fit: cover;
+        top: 0px;
+        left: -9999px;
+        width: 0px;
+        height: 0px;
+        
+        &-active {
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // МОДАЛЬНОЕ (ВСПЛЫВАЮЩЩЕ) ОКНО
+    &-modal {
+        position: absolute;
+        overflow: hidden;
+        top: 9999px;
+        left: -9999px;
+        height: 0px;
+        width: 0px;
+        z-index: -100;
+
+        &-open {
+            height: auto;
+            width: auto;
+            top: 0px;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            @include blur-background(2px);
+        }
+    }
+
+    &-modal-win {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100px;
+        min-width: 400px;
+        background-color: $c-white;
+        @include border-radius(5px);
+        @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+
+        @media screen and (max-width: 480px){
+            min-width: 300px;
+        }
+
+        @media screen and (max-width: 320px){
+            min-width: 240px;
+        }
+    }
+
+    &-modal-header {
+        position: relative;
+        padding: 8px 28px 8px 8px;
+        height: 20px;
+        border-bottom: 1px solid $c-greay;
+
+        &-title {
+            font-size: 16px;
+            line-height: 1.25;
+            overflow: hidden;
+            white-space:nowrap; 
+            text-overflow: ellipsis;
+        }
+
+        &-btn {
+            position: absolute;
+            top: 8px;
+            right: 8px; 
+            width: 20px;
+            height: 20px;
+            background-color: $c-greay;
+            cursor: pointer;
+            background: $c-white url(/public/resources/images/3dviewer/modal/close.svg) no-repeat center center;
+            background-size: 16px 16px;
+            opacity: 0.5;
+            @include transition(opacity 0.3s);
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &-modal-content {
+        position: relative;
+        // padding: 0 0.5 * $sz-gutter 0.5 * $sz-gutter 0.5 * $sz-gutter;
+        padding: 0.5 * $sz-gutter;
+    }
+
+    &-modal-buttons {
+        position: relative;
+        margin: 2 * $sz-gutter auto;
+        text-align: center;
+    }
+
+    &-modal-btn {
+        display: inline-block;
+        position: relative;
+        padding: 0.25 * $sz-gutter 0.5 * $sz-gutter;
+        margin: 0 $sz-gutter;
+        background-color: $c-greay;
+        text-align: center;
+        font-size: 15px;
+        @include border-radius(5px);
+        // @include box-shadow(1px 1px 5px 0px rgba(0, 0, 0, 0.4));
+        @include box-shadow(0px 0px 0px 1px rgba(0, 0, 0, 0.4));
+        cursor: pointer;
+        @include select(none);
+
+        &:hover {
+            @include box-shadow(0px 0px 0px 2px rgba(0, 0, 0, 0.4));
+        }
+
+        &-accept {
+            background-color: $c-white;
+        }
+    }
+
+    &-win3d-modal {
+        &-download-item {
+            margin-bottom: 10px;
+        }
+    }
+}
+

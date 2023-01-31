@@ -1,0 +1,65 @@
+.__xr {
+    font-family: 'Roboto', sans-serif;
+    
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+    @media print {
+        display: none;
+    }
+
+
+    /* main */
+    &-content {
+        position: relative;
+    }
+
+    &-main {
+        margin: 0 auto;
+        position: relative;
+        line-height: 1.2;
+        font-family: 'Roboto', sans-serif;
+        background: url(/public/resources/images/bg-content.jpg) left top repeat;
+        letter-spacing: 0.3px;
+        font-size: 16px;
+        color: $c-gray;
+
+        padding: 25px 0;
+    }
+
+
+
+    /* wh-box */
+    &-wh-box {
+        background: $c-white;
+        @include border-radius(20px);
+        padding: 40px 40px;
+        position: relative;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 4px rgba(192, 214, 225, 0.4);
+
+        &-mt {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 20px;
+        }
+    
+        &-title {
+            font-size: 20px;
+            font-weight: 500;
+            color: $c-gray;
+            margin: 0 0 30px;
+            
+            @media (max-width: 767px) {
+                font-size: 16px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    
+}
+

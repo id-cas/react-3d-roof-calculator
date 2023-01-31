@@ -1,0 +1,12 @@
+.__xr {
+    &-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 1190px;
+
+        @media (max-width: 767px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}

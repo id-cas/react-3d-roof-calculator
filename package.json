@@ -1,0 +1,55 @@
+{
+  "name": "cost-estimate",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.8",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "base-64": "^1.0.0",
+    "commander": "^7.2.0",
+    "javascript-obfuscator": "^2.15.2",
+    "js-cookie": "^2.2.1",
+    "jspdf": "^2.3.1",
+    "jspdf-autotable": "^3.5.14",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "qrcode": "^1.4.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "react-select": "^4.3.0",
+    "save-svg-as-png": "^1.4.17",
+    "socket.io-client": "^2.4.0",
+    "svg2pdf.js": "^2.1.0",
+    "sync-fetch": "^0.3.0",
+    "three": "^0.124.0",
+    "uniqid": "^5.3.0",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "(SET INLINE_RUNTIME_CHUNK=false) && (SET GENERATE_SOURCEMAP=false) && react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {}
+}
